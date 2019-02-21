@@ -1,0 +1,1 @@
+This is a simple text file terminated by a new line
