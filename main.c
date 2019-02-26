@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#include "adder.h"
+#include "mathfunc.h"
 #include "user.h"
 
 int main(void) 
@@ -10,5 +10,7 @@ int main(void)
 	int a, b;
     receive_user_input(&a, &b);
 	printf("Sum = %d\n", adder(a, b));
+	printf("Multiplication = %d\n", multiply(a, b));
+	printf("Division = %d\n", divide(a, b));
 	return 1;
 }

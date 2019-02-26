@@ -1,10 +1,11 @@
 CC = gcc
 COBJ = -c
 CFLAGS = -Wall -pedantic
-OBJ = adder.o user.o main.o 
+CFILES = main.c mathfunc.c user.c
+OBJ = mathfunc.o user.o main.o 
 
-target: main.c adder.c user.c
-	$(CC) $(COBJ) $(CFLAGS) adder.c user.c main.c
+target: $(CFILES)
+	$(CC) $(COBJ) $(CFLAGS) $(CFILES)
 	gcc $(OBJ) -o main
 
 clean: 
